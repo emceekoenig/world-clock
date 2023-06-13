@@ -12,6 +12,17 @@ function updateTime() {
     );
   }
 
+  // Rome
+  let romeElement = document.querySelector("#rome");
+  if (romeElement) {
+    let romeDateElement = romeElement.querySelector(".date");
+    let romeTimeElement = romeElement.querySelector(".time");
+    let romeTime = moment().tz("Europe/Rome");
+
+    romeDateElement.innerHTML = romeTime.format("MMMM Do, YYYY");
+    romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
   // Sydney
   let sydneyElement = document.querySelector("#sydney");
   if (sydneyElement) {
