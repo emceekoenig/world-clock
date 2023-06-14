@@ -41,9 +41,9 @@ select {
   background: white;
   border-radius: 10px;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.4);
-  margin: 60px auto;
-  margin-bottom: 30px;
-  max-width: 600px;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  max-width: 500px;
   padding: 30px;
 }
 
@@ -77,7 +77,7 @@ select {
 .theme {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   transition: 300ms ease-in-out;
 }
 
