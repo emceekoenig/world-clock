@@ -61,12 +61,19 @@ function updateCity(event) {
 
 function changeTheme() {
   let body = document.querySelector("body");
+  let selectElement = document.querySelector("select");
   let footer = document.querySelector("footer");
 
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
   } else {
     body.classList.add("dark");
+  }
+
+  if (selectElement.classList.contains("dark")) {
+    selectElement.classList.remove("dark");
+  } else {
+    selectElement.classList.add("dark");
   }
 
   if (footer.classList.contains("dark")) {
